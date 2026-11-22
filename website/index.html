@@ -11,20 +11,22 @@
   <link rel="preload" as="image" href="assets/images/spark-real.webp">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/upgrade.css">
+  <link rel="stylesheet" href="assets/css/learning.css">
+  <link rel="stylesheet" href="assets/css/refined.css">
 </head>
 <body id="top">
   <a class="skip" href="#main">Skip to content</a>
   <header>
-    <a class="brand" href="#top"><span class="brand-mark"><img src="assets/images/spark-lab-logo.jpeg" alt="" width="1264" height="843"></span><span class="wordmark">spark <strong>lab</strong></span></a>
+    <a class="brand" href="#top" aria-label="Spark Lab home"><span class="brand-mark" aria-hidden="true"><svg viewBox="465 207 395 310" width="56" height="56" focusable="false" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="brand-clip-0"><rect x="465" y="207" width="395" height="310"/></clipPath></defs><image href="assets/images/spark-lab-logo.jpeg" width="1264" height="843" clip-path="url(#brand-clip-0)"/></svg></span><span class="wordmark">spark <strong>lab</strong></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">☰</button>
     <nav id="main-nav" aria-label="Main navigation">
       <a href="#approach">Our approach</a>
       <a href="#features">Features</a>
       <a href="#spatial">Meet Spark</a>
       <a href="#team">Our team</a>
-      <a href="#download">Download</a><a href="#faq">FAQ</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="button small" href="#playground">Try the demo</a>
+    <div class="header-actions"><a class="nav-demo" href="#playground">Explore demo</a><button class="button small" id="account-button" data-login aria-haspopup="dialog" aria-controls="login-dialog">Demo sign in</button></div>
   </header>
   <div class="reading-bar"><span>Every mind deserves room to shine.</span><div role="group" aria-label="Page text size"><span>Text size</span><button data-text-size="standard" aria-pressed="true" aria-label="Standard text size">A</button><button data-text-size="large" aria-pressed="false" aria-label="Larger text size">A+</button></div></div>
 
@@ -35,10 +37,10 @@
         <h1>Different minds.<br> Brighter futures.<br> <em>One little spark.</em></h1>
         <p>A calmer way to learn, one small step at a time. A learning space designed around children with ADHD—and the people cheering them on.</p>
         <div class="actions">
-          <a class="button" href="#playground">Try a little learning </a>
-          <a class="text-link" href="#spatial">Meet your study buddy </a>
+          <button class="button" data-login data-login-role="learner">Start your learning journey</button>
+          <a class="text-link" href="#playground">Explore as a guest</a>
         </div>
-        <div class="note"><span>✧</span> A student-led project. Designed with care.</div>
+        <div class="note"><span>✧</span> Small steps. No timers. Room to be you.</div><div class="hero-tags"><span>For learners</span><span>For educators</span><span>Built with care</span></div>
       </div>
       <div class="hero-art" id="art">
         <img src="assets/images/spark-real.webp" alt="Friendly white and lavender AI study-buddy robot waving hello" width="1254" height="1254">
@@ -87,110 +89,48 @@
           <button aria-pressed="false" data-audience="educators">For educators</button>
         </div>
         <div id="audience-copy" class="audience-panel" aria-live="polite">
-          <p><strong>Smaller steps, more ways to explore, and a learning space you can make your own.</strong> Instead of facing a wall of instructions, children start with a quick energy check-in, tackle one two-minute micro-step at a time, and switch between reading, listening, and hands-on 3D visuals whenever they need a fresh angle.</p>
+          <p><strong>Smaller steps, more ways to explore, and a learning space you can make your own.</strong> Instead of facing a wall of instructions, children focus on one small idea at a time and explore swipeable learning cards, visual maths blocks and short recall quizzes at their own pace.</p>
         </div>
       </div>
     </section>
 
     <section id="features" class="wrap">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">THOUGHTFUL BY DESIGN</div>
-          <h2>A little support.<br> A lot more possibility.</h2>
-        </div>
-        <p>Five connected ideas for a more inclusive learning day.<br> <span class="pill">Product features in development</span></p>
-      </div>
-      <div class="features">
-        <article class="feature lavender wide">
-          <span class="feature-num">A SMALLER FIRST STEP</span>
-          <h3>Big tasks.<br> Little, doable steps.</h3>
-          <p>The planned AI Task Atomizer breaks assignments into manageable steps, with a two-minute starter and a way to find your place again.</p>
-          <div class="task-mini">
-            <span>Write a story about the ocean</span>
-            <div>✓ &nbsp; Pick your main character</div>
-            <div>○ &nbsp; Imagine where they live <small>2 min</small></div>
-            <div>○ &nbsp; Write your first sentence</div>
-          </div>
-        </article>
-        <article class="feature mint">
-          <span class="feature-num">MORE WAYS TO LEARN</span>
-          <div class="big-symbol">Aa <span>◖))</span></div>
-          <h3>Read it. Hear it.<br> Make it click.</h3>
-          <p>Follow-along text-to-speech, spoken ideas and visual maths blocks are designed to offer more than one path to understanding.</p>
-        </article>
-        <article class="feature peach">
-          <span class="feature-num">ENERGY COMES FIRST</span>
-          <div class="energy-art">◔ &nbsp; ◑ &nbsp; ●</div>
-          <h3>Every kind of day<br> is welcome.</h3>
-          <p>Energy check-ins, gentler task lists and a no-shame pause help make room for low-energy days.</p>
-        </article>
-        <article class="feature cream">
-          <span class="feature-num">YOUR SPACE, YOUR WAY</span>
-          <div class="swatches"><i></i><i></i><i></i></div>
-          <h3>A calmer place<br> to focus.</h3>
-          <p>Planned sensory controls include calm colour themes, readable text and reduced distractions. Comfort belongs in the design.</p>
-        </article>
-        <article class="feature pale">
-          <span class="feature-num">SOMEONE IN YOUR CORNER</span>
-          <img class="buddy-portrait" src="assets/images/spark-tablet.webp" alt="Spark study-buddy mascot" loading="lazy">
-          <h3>A little company.<br> A helpful nudge.</h3>
-          <p>An experimental AI study buddy is planned to offer gentle prompts, alongside educator and parent support tools.</p>
-        </article>
+      <div class="section-head"><div><div class="eyebrow">SMALL MOMENTS. MEANINGFUL PROGRESS.</div><h2>Five ways to find<br> your learning spark.</h2></div><p>Explore the updated learning experience.<br><span class="pill">Interactive project prototypes</span></p></div>
+      <div class="features refreshed-features">
+        <article class="feature lavender"><span class="feature-num">MICRO-LEARNING FEED</span><span class="feature-glyph" aria-hidden="true">▤</span><h3>One card.<br> One little discovery.</h3><p>Swipe through bite-sized lessons, focus on one idea, and mark a card complete when you’re ready.</p><a class="text-link" href="#playground" data-launch="feed">Explore the cards</a></article>
+        <article class="feature mint"><span class="feature-num">VISUAL MATH BLOCKS · US7</span><span class="feature-glyph" aria-hidden="true">▦</span><h3>Make numbers<br> something you can see.</h3><p>Build addition and subtraction with colourful blocks. Change the numbers and see quantities come together or move away.</p><a class="text-link" href="#playground" data-launch="math">Try the blocks</a></article>
+        <article class="feature peach"><span class="feature-num">ACTIVE RECALL · US4</span><span class="feature-glyph" aria-hidden="true">✧</span><h3>Remember a little.<br> Celebrate a lot.</h3><p>Try short recall quizzes with helpful explanations. Collect badges for learning milestones, without a countdown.</p><a class="text-link" href="#playground" data-launch="quiz">Try a quiz</a></article>
+        <article class="feature cream"><span class="feature-num">PANIC BUTTON · US9</span><span class="feature-glyph" aria-hidden="true">☁</span><h3>A quieter moment.<br> Whenever you need it.</h3><p>Open a calm pause screen in one tap. Distractions step aside and your learning progress stays right where you left it.</p><button class="text-link" data-calm>Try a quiet pause</button></article>
+        <article class="feature pale"><span class="feature-num">EDUCATOR DASHBOARD · US15</span><span class="feature-glyph" aria-hidden="true">▥</span><h3>See the progress.<br> Support the next step.</h3><p>Explore lesson completion, recall results and learner activity in a sample educator view, with a closer look at each learner.</p><a class="text-link" href="#playground" data-launch="educator">Explore the dashboard</a></article>
       </div>
     </section>
-
-    <section id="playground" class="demo-section">
-      <div class="wrap demo-grid">
-        <div>
-          <div class="eyebrow">A LITTLE PREVIEW, JUST FOR YOU</div>
-          <h2>What does a<br> kinder study day<br> <em>feel like?</em></h2>
-          <p>Choose your energy and take one small step. Or switch to Read along to try adjustable text and your browser’s reading voice.</p>
-          <p class="fine">Illustrative browser demo. No AI service or student account is connected.</p>
-          <label class="motion"><input id="motion" type="checkbox"> Reduce motion and depth effects</label>
-        </div>
-        <div class="demo">
-          <div class="demo-modes" aria-label="Choose a learning demo">
-            <button aria-pressed="true" data-demo="tasks">Small steps</button>
-            <button aria-pressed="false" data-demo="reader">Read along</button>
+    <section id="playground" class="learning-section">
+      <div class="wrap">
+        <div class="lab-heading"><div><div class="eyebrow">YOUR LITTLE LEARNING LAB</div><h2>Discover. Try. Take your time.</h2><p>Try the five features below. Everything here is a browser prototype; educator examples are fictional.</p></div><label class="motion"><input id="motion" type="checkbox"> Reduce motion</label></div>
+        <div class="session-welcome" id="session-welcome"><div><span class="session-label" id="session-label">YOUR SPACE TO EXPLORE</span><h3 id="welcome-title">A little curiosity goes a long way.</h3><p id="welcome-copy">Start with a card, build with blocks, or see what you remember.</p></div><button class="outline-button" data-login id="welcome-signin">Try demo sign-in</button><div class="session-totals" id="session-totals" hidden><span><strong id="welcome-cards">0</strong> cards learned</span><span><strong id="welcome-badges">0</strong> badges earned</span></div></div>
+        <div class="lab-shell">
+          <div class="lab-toolbar"><span class="lab-brand">✦ My learning space</span><span class="pill" id="workspace-role">GUEST DEMO</span><button class="quiet-button" data-calm>I need a pause</button></div>
+          <div class="lab-navigation" role="group" aria-label="Choose a learning activity">
+            <button data-panel="feed" aria-pressed="true" aria-controls="panel-feed">Learning cards</button><button data-panel="math" aria-pressed="false" aria-controls="panel-math">Math blocks</button><button data-panel="quiz" aria-pressed="false" aria-controls="panel-quiz">Quiz &amp; badges</button><button data-panel="educator" aria-pressed="false" aria-controls="panel-educator">Educator view</button>
           </div>
-          <div id="task-demo">
-            <div class="demo-top">
-              <span class="brand"><span class="logo">✦</span>My learning space</span>
-              <span class="pill">DEMO</span>
-            </div>
-            <h3>Hello, curious mind.</h3>
-            <p>How much energy do you have today?</p>
-            <div class="energy-buttons" aria-label="Choose your energy">
-              <button data-energy="low" aria-pressed="false">◔<span>A little</span></button>
-              <button data-energy="medium" aria-pressed="true" class="active">◑<span>Some</span></button>
-              <button data-energy="high" aria-pressed="false">●<span>Lots</span></button>
-            </div>
-            <div class="demo-message" id="energy-message" aria-live="polite">Let's take it one small step at a time.</div>
-            <div class="task-heading"><strong>Your ocean story</strong><span id="progress-label">0 of 3 steps</span></div>
-            <progress id="progress" max="3" value="0" aria-label="Completed story steps"></progress>
-            <div id="tasks">
-              <label><input type="checkbox"> Pick a sea creature <small>1 min</small></label>
-              <label><input type="checkbox"> Imagine its home <small>2 min</small></label>
-              <label><input type="checkbox"> Write one opening sentence <small>2 min</small></label>
-            </div>
-            <div class="demo-footer">
-              <button id="pause" class="text-link">♡ I need a pause</button>
-              <button id="reset" class="text-link">Start again ↺</button>
-            </div>
-            <p id="feedback" aria-live="polite"></p>
-          </div>
-          <div id="reader-demo" hidden>
-            <span class="pill">READ-ALOUD DEMO</span>
-            <h3>A little ocean adventure.</h3>
-            <p>Listen, read, and explore at your own pace.</p>
-            <div class="reader-text" id="reader-text">A little turtle swims through the blue ocean. She finds a bright shell resting on the sand. Every small discovery begins with curiosity.</div>
-            <div class="reader-actions">
-              <button class="button" id="read-aloud">Listen to the story ▷</button>
-              <button class="text-link" id="stop-reading">Stop</button>
-            </div>
-            <label class="reading-size">Text size <input id="reading-size" type="range" min="18" max="30" value="22"></label>
-            <p id="reader-status" aria-live="polite">Uses your browser’s built-in voice, when available.</p>
-          </div>
+          <section id="panel-feed" class="lab-panel" aria-labelledby="feed-heading">
+            <div class="activity-heading"><div><span class="activity-kicker">MICRO-LEARNING FEED</span><h3 id="feed-heading">A small idea to explore.</h3><p>Swipe left or right, use the buttons, or focus the card and press the arrow keys.</p></div><span id="feed-progress" class="progress-pill" aria-live="polite"></span></div>
+            <div class="feed-layout"><article id="learning-card" class="learning-card" tabindex="0" aria-label="Learning card. Use left and right arrow keys to browse."><div class="card-meta"><span id="card-subject"></span><span id="card-count"></span></div><div id="card-art" class="card-art" aria-hidden="true"></div><h4 id="card-title"></h4><p id="card-copy"></p><div class="card-prompt" id="card-prompt"></div><button id="complete-card" class="button">Mark as learned</button><span id="card-feedback" role="status"></span></article><aside class="learning-aside"><h4>Little steps count.</h4><p>Read a card, think about its question, then mark it as learned. You can come back to any idea.</p><div class="badge-preview" id="feed-badge"></div><div class="card-navigation"><button id="previous-card" class="outline-button">Previous card</button><button id="next-card" class="outline-button">Next card</button></div><p class="session-note">Four sample lessons. No time limit. Your pace.</p></aside></div>
+          </section>
+          <section id="panel-math" class="lab-panel" aria-labelledby="math-heading" hidden>
+            <div class="activity-heading"><div><span class="activity-kicker">VISUAL MATH BLOCKS · US7</span><h3 id="math-heading">Build it. Count it. Understand it.</h3><p>Explore whole numbers from 0 to 10. Each block represents one.</p></div></div>
+            <div class="math-controls"><label>First number<input id="math-a" type="number" min="0" max="10" step="1" value="3"></label><label>Operation<select id="math-operation"><option value="add">Addition (+)</option><option value="subtract">Subtraction (−)</option></select></label><label>Second number<input id="math-b" type="number" min="0" max="10" step="1" value="2"></label><button id="build-math" class="button">Build the blocks</button></div><p id="math-error" role="alert"></p>
+            <div id="math-stage" class="math-stage" aria-label="Visual representation of the equation"></div><p id="math-equation" class="math-equation" aria-live="polite"></p><p id="math-explanation" class="math-explanation"></p><div class="math-examples"><span>Try an example</span><button class="outline-button" data-equation="4,add,3">4 + 3</button><button class="outline-button" data-equation="7,subtract,2">7 − 2</button><button class="outline-button" data-equation="5,subtract,5">5 − 5</button></div>
+          </section>
+          <section id="panel-quiz" class="lab-panel" aria-labelledby="quiz-heading" hidden>
+            <div class="activity-heading"><div><span class="activity-kicker">ACTIVE RECALL QUIZZES &amp; BADGES · US4</span><h3 id="quiz-heading">What can you remember?</h3><p>Three questions based on your learning cards. Try recalling the idea before choosing.</p></div><span class="progress-pill" id="quiz-progress"></span></div>
+            <div class="quiz-layout"><div class="quiz-card"><div id="quiz-question-area"><h4 id="quiz-question"></h4><div id="quiz-options" class="quiz-options"></div><p id="quiz-feedback" role="status"></p><button id="quiz-next" class="button" hidden>Next question</button></div><div id="quiz-result" hidden><span class="result-symbol" aria-hidden="true">✧</span><h4 id="quiz-result-heading"></h4><p id="quiz-result-copy"></p><button id="quiz-retry" class="button">Try the quiz again</button><button class="text-link" data-panel-link="feed">Review the learning cards</button></div></div><aside class="badge-shelf"><h4>Your little wins</h4><p>Badges celebrate milestones. A pause never takes one away.</p><div id="badge-list" aria-live="polite"></div></aside></div>
+          </section>
+          <section id="panel-educator" class="lab-panel" aria-labelledby="educator-heading" hidden>
+            <div class="activity-heading"><div><span class="activity-kicker">EDUCATOR DASHBOARD · US15</span><h3 id="educator-heading">A clearer view of the next step.</h3><p>Sample classroom data plus your current demo session. This is not a connected student-record system.</p></div><span class="sample-label">Fictional learners</span></div>
+            <div id="dashboard-metrics" class="dashboard-metrics"></div><div class="dashboard-filters"><label>Find a learner<input id="learner-search" type="search" placeholder="Search sample learners"></label><label>Show<select id="learner-filter"><option value="all">All learners</option><option value="support">Needs a check-in</option><option value="progress">Making progress</option></select></label><button id="reset-session" class="outline-button">Reset my demo</button></div><div class="table-scroll"><table class="learner-table"><caption>Learning activity · select a learner to see details</caption><thead><tr><th scope="col">Learner</th><th scope="col">Cards learned</th><th scope="col">Latest quiz</th><th scope="col">Activity</th><th scope="col">Details</th></tr></thead><tbody id="learner-rows"></tbody></table></div><p id="dashboard-empty" hidden>No learners match. Try another search or filter.</p><p class="session-note">“Needs a check-in” means an attempted quiz scored below 2 of 3. It is a demo rule, not an assessment of a learner’s needs. Pauses never lower a score.</p><div id="learner-detail" class="learner-detail" aria-live="polite"></div>
+          </section>
+          <div class="lab-bottom"><span>Progress stays in this tab and resets when you reload.</span><span id="session-status" role="status"></span></div>
         </div>
       </div>
     </section>
@@ -361,7 +301,7 @@
               <span class="role-badge dev">Developer</span>
               <h3>Vanuja Liyanage</h3>
               <strong class="member-specialty">Adaptive Task Engine &amp; Interactive Logic</strong>
-              <span class="member-edu">BSc (Hons) Computer Science · IIT / IEEE Student Member</span>
+              <span class="member-edu">BSc (Hons) Computer Science · IIT / University of Westminster</span>
             </div>
           </div>
           <details class="team-card-body"><summary>About this role</summary>
@@ -389,20 +329,20 @@
             <div class="team-title-block">
               <span class="role-badge dev">Developer</span>
               <h3>Yohan Singappulige</h3>
-              <strong class="member-specialty">AI Companion, Read-Aloud TTS &amp; 3D Spatial Web</strong>
+              <strong class="member-specialty">Visual Math Blocks, Recall Quizzes &amp; 3D Learning</strong>
               <span class="member-edu">BSc (Hons) Computer Science · IIT / University of Westminster</span>
             </div>
           </div>
           <details class="team-card-body"><summary>About this role</summary>
-            <p>Develops the multi-modal learning pathways that let children read, listen, and explore hands-on. Combines Web Speech synthesis, interactive Three.js 3D companions, and supportive study-buddy prompts to make abstract concepts click.</p>
+            <p>Develops visual learning pathways through interactive maths blocks, short active recall quizzes and the Three.js companion. Connects understandable feedback with encouraging progress milestones.</p>
             <ul class="member-highlights">
-              <li>Implements follow-along text-to-speech (TTS) controls, adjustable reading typography, and multi-sensory maths aids.</li>
+              <li>Implements Visual Math Blocks (US7), active recall interactions and badges (US4), alongside adjustable page typography.</li>
               <li>Builds the interactive 3D Spark companion scene and gentle AI study-buddy encouragement workflows.</li>
             </ul>
             <div class="team-card-footer">
               <div class="member-tags">
-                <span>AI Study Buddy</span>
-                <span>Speech &amp; TTS</span>
+                <span>Visual Maths</span>
+                <span>Quizzes &amp; Badges</span>
                 <span>WebGL / 3D</span>
               </div>
               <a class="linkedin-link" href="https://www.linkedin.com/in/yohan-singappulige-1a90b435a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -431,102 +371,7 @@
       </div>
     </section>
 
-    <section id="faq" class="wrap faq">
-      <div class="faq-head">
-        <div class="eyebrow"><i></i> QUESTIONS &amp; INCLUSIVE DESIGN DETAILS</div>
-        <h2>A few things you might be wondering.</h2>
-        <p>Explore how SPARK LAB is designed around neurodivergent primary-school learners, overlapping learning differences, and the families and educators supporting them.</p>
-      </div>
-
-      <details>
-        <summary>Who are we designing for?</summary>
-        <div class="faq-content">
-          <p>SPARK LAB is designed first and foremost for <strong>primary-school learners (ages 6–11) with ADHD</strong>, who often experience executive-function overload, working-memory fatigue, time blindness, or sensory overwhelm when faced with traditional, text-heavy school worksheets. Because neurodivergent learning profiles frequently overlap, our architecture also embeds multi-sensory accessibility for co-occurring learning differences alongside dedicated tools for the adults cheering them on:</p>
-          <div class="faq-cards">
-            <div class="faq-subcard lavender-sub">
-              <span>PRIMARY LEARNERS WITH ADHD</span>
-              <h4>Executive Function &amp; Pacing Support</h4>
-              <p>Replaces intimidating walls of instructions with the <strong>AI Task Atomizer</strong>—breaking assignments into a two-minute starter and one doable micro-step at a time. Energy check-ins and a no-shame pause button let children regulate their focus without losing their place or confidence.</p>
-            </div>
-            <div class="faq-subcard mint-sub">
-              <span>DYSLEXIA, DYSGRAPHIA &amp; DYSCALCULIA</span>
-              <h4>Multi-Sensory Learning Pathways</h4>
-              <p>Supports <strong>dyslexia</strong> with adjustable text sizing, generous spacing, warm low-glare backgrounds, and follow-along read-aloud speech (TTS); <strong>dysgraphia</strong> with low-friction sentence starters and spoken idea prompts; and <strong>dyscalculia</strong> with visual 3D maths blocks that make abstract quantities concrete.</p>
-            </div>
-            <div class="faq-subcard peach-sub">
-              <span>PARENTS &amp; CAREGIVERS</span>
-              <h4>Calmer Homework &amp; Shared Milestones</h4>
-              <p>Provides families with a pressure-free companion view that translates school tasks into gentle home routines, highlights small daily wins, and helps parents understand how their child’s energy and focus shift across the week.</p>
-            </div>
-            <div class="faq-subcard sky-sub">
-              <span>EDUCATORS &amp; SENCOs</span>
-              <h4>Practical Classroom Differentiation</h4>
-              <p>Equips primary-school teachers and learning support coordinators with inclusive assignment templates, sensory-safe display presets, and clear visibility into where a student paused—so support feels timely and encouraging.</p>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <details>
-        <summary>Is SPARK LAB ready to use?</summary>
-        <div class="faq-content">
-          <p>SPARK LAB is currently an <strong>interactive concept demonstration and research-informed web prototype</strong> built by our five-member student Scrum Team. You can try our core interaction concepts directly on this page today while the full platform is developed across iterative Sprints:</p>
-          <ul class="faq-list">
-            <li><strong>Live in this browser demo:</strong> Try the <em>Small Steps &amp; Energy Check-In</em> task flow, test the <em>Read-Aloud Story Reader</em> with live font scaling and browser voice synthesis, and interact with our <em>3D Spark Study-Buddy</em> sculptures.</li>
-            <li><strong>In active Sprint development:</strong> Automated AI task breakdown for custom classroom worksheets, persistent learner workspaces, interactive visual maths manipulatives, and connected parent/educator dashboards.</li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>How does SPARK LAB adapt to a child’s daily energy and focus?</summary>
-        <div class="faq-content">
-          <p>For children with ADHD, attention and executive readiness aren’t the same every day—trying harder on a depleted afternoon often leads to frustration. SPARK LAB begins every session with an <strong>Energy Check-In</strong> that reshapes the workspace immediately:</p>
-          <ul class="faq-list">
-            <li><strong>“A little” energy (Low-Demand Mode):</strong> Hides future steps and narrows the screen to a single, gentle 1-minute starter so starting feels safe and achievable.</li>
-            <li><strong>“Some” energy (Guided Flow):</strong> Reveals a structured three-step checklist with a calm progress bar and encouraging micro-feedback after every completed step.</li>
-            <li><strong>“Lots” of energy (Discovery Mode):</strong> Encourages deeper creative exploration across reading, audio storytelling, and interactive 3D models.</li>
-            <li><strong>No-Shame Pause:</strong> Learners can tap <em>“I need a pause”</em> at any time for a grounding shoulder-relaxation prompt without penalties or countdown timers.</li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>How is the SPARK LAB Scrum Team organized?</summary>
-        <div class="faq-content">
-          <p>We work as a cross-functional, self-managing five-member <strong>Scrum Team</strong> following the official Scrum Guide accountabilities—uniting product vision, agile coaching, and full-stack software engineering:</p>
-          <ul class="faq-list">
-            <li><strong>Product Owner (Dunith Peiris):</strong> Establishes the Product Goal, orders the Product Backlog around neurodivergent learner outcomes, and leads inclusive UI/UX and sensory wellness design.</li>
-            <li><strong>Scrum Master (Sanithu Kudaliyana):</strong> Coaches the team in empirical Scrum practices, facilitates Sprint events, removes impediments, and oversees system architecture, quality assurance, and accessibility testing.</li>
-            <li><strong>Developers (Navindu Fernando, Vanuja Liyanage &amp; Yohan Singappulige):</strong> Collaboratively plan, engineer, test, and integrate usable Sprint Increments across full-stack web architecture, the adaptive Task Atomizer engine, multi-modal TTS speech, and interactive 3D WebGL scenes.</li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>Can I turn off the visual effects and customize sensory comfort?</summary>
-        <div class="faq-content">
-          <p>Yes. Sensory regulation is built directly into SPARK LAB’s interface standards so visual motion never competes with a child’s concentration:</p>
-          <ul class="faq-list">
-            <li><strong>Instant Reduced-Motion Toggle:</strong> Check the <em>“Reduce motion and depth effects”</em> box in the interactive demo section to immediately turn off 3D card tilt, smooth scroll transitions, and continuous 3D rotation.</li>
-            <li><strong>Automatic Device Sync:</strong> The platform automatically detects and respects your operating system’s <code>prefers-reduced-motion</code> accessibility setting as soon as the page loads.</li>
-            <li><strong>Low-Stimulation Visuals:</strong> All surfaces use soft pastel contrast, generous whitespace, and zero flashing, strobing, or rapid animations.</li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>Does this demo collect personal information or student data?</summary>
-        <div class="faq-content">
-          <p>This demonstration has no student accounts, analytics, or forms that collect learning records. Hosting providers may process technical access logs. Because we design for primary-school learners, strict privacy protection comes first:</p>
-          <ul class="faq-list">
-            <li><strong>Local-Only Session State:</strong> Energy check-in choices, completed story steps, and text-size adjustments stay inside your current browser tab and reset automatically when you refresh or leave the page.</li>
-            <li><strong>On-Device Read-Aloud Voice:</strong> The reader uses browser-provided speech synthesis. Voice availability and whether processing is local or online depend on your browser and selected voice. This page does not record your voice.</li>
-            <li><strong>Transparent Visuals:</strong> The robot and family illustrations are AI-generated concept artwork, while the Scrum Team section features our real university project contributors.</li>
-          </ul>
-        </div>
-      </details>
-    </section>
+    <section id="faq" class="wrap faq"><div class="faq-head"><div class="eyebrow">A FEW HELPFUL ANSWERS</div><h2>Curious about the details?</h2><p>What’s included, how the demo works, and what comes next.</p></div><details><summary>Who is Spark Lab designed for?</summary><div class="faq-content"><p>Our project focuses on primary-school learners with ADHD and the families and educators supporting them. Small lessons, visual explanations, readable text and a calm pause space are central to the design.</p></div></details><details><summary>What can I try on this page?</summary><div class="faq-content"><p>The browser prototype includes a Micro-Learning Feed with swipeable cards, Visual Math Blocks (US7), Active Recall Quizzes and Badges (US4), a Panic Button (US9), and an Educator Dashboard (US15). The Spark companion remains available below the learning lab.</p></div></details><details><summary>How do learning cards and badges work?</summary><div class="faq-content"><p>Browse four sample cards and mark each as learned. Complete one card for First Spark and all four for Curious Mind. A perfect score on the three-question recall quiz earns Recall Star. Repeat answers do not add points, and retrying a quiz does not remove badges you already earned.</p></div></details><details><summary>What happens when I press the panic button?</summary><div class="faq-content"><p>The “I need a pause” button opens a quiet screen and pauses companion motion. You can stay as long as you need, then return to the same activity. Your cards, quiz answers and badges remain unchanged. It is a learning comfort control, not an emergency service.</p></div></details><details><summary>How does demo sign-in work?</summary><div class="faq-content"><p>Choose a learner or educator sample account on the sign-in screen, then select Sign in to demo. Learners arrive at the learning cards; educators arrive at the fictional classroom dashboard. These are local demonstration roles, not secure accounts. You can switch roles, sign out, or browse the learner activities as a guest.</p></div></details><details><summary>What does the educator dashboard show?</summary><div class="faq-content"><p>The dashboard combines three fictional learners with your current browser session. It shows completed cards, latest quiz results and an activity filter. Select View for badge counts and pause information. It does not connect to real classrooms, send alerts or store student records.</p></div></details><details><summary>Does the demo save learner data?</summary><div class="faq-content"><p>The sign-in screen uses two public sample accounts. There is no real authentication, account registration or connected student-record system. Demo sign-in, progress, badges and text-size preferences live only in the current tab and reset when the page reloads. Hosting providers may process technical access logs. The robot and family scenes are AI-created concept artwork.</p></div></details><details><summary>Is the full product available to download?</summary><div class="faq-content"><p>The full product is still in development. These working browser interactions demonstrate the intended experience; a downloadable learning application is not yet available.</p></div></details></section>
 
     <section class="wrap cta">
       <img class="cta-robot" src="assets/images/spark-welcome.webp" alt="Spark, your friendly study-buddy concept" loading="lazy">
@@ -541,24 +386,40 @@
   </main>
 
   <footer class="wrap">
-    <a class="brand" href="#top"><span class="brand-mark"><img src="assets/images/spark-lab-logo.jpeg" alt="" width="1264" height="843"></span><span class="wordmark">spark <strong>lab</strong></span></a>
+    <a class="brand" href="#top" aria-label="Spark Lab home"><span class="brand-mark" aria-hidden="true"><svg viewBox="465 207 395 310" width="56" height="56" focusable="false" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="brand-clip-1"><rect x="465" y="207" width="395" height="310"/></clipPath></defs><image href="assets/images/spark-lab-logo.jpeg" width="1264" height="843" clip-path="url(#brand-clip-1)"/></svg></span><span class="wordmark">spark <strong>lab</strong></span></a>
     <p>Built by the SPARK LAB Scrum Team · Thoughtfully designed for different minds.</p>
     <div class="footer-links">
       <a href="#features">Features</a>
       <a href="#playground">Demo</a>
       <a href="#team">Team</a>
+      <a href="#download">Release</a>
       <button id="privacy">Privacy</button>
     </div>
     <span>© 2026 SPARK LAB</span>
   </footer>
 
+  <button class="panic-fab" data-calm aria-haspopup="dialog" aria-controls="calm-dialog">I need a pause</button>
+  <dialog id="calm-dialog" aria-labelledby="calm-title" aria-describedby="calm-copy"><div class="calm-content"><span class="calm-symbol" aria-hidden="true">☁</span><p class="activity-kicker">A QUIETER MOMENT · PANIC BUTTON</p><h2 id="calm-title">You can take your time.</h2><p id="calm-copy">Your learning is safe right here. Relax your shoulders, look away from the screen if you like, and return whenever you feel ready.</p><p>No timer. No pressure. No progress lost.</p><form method="dialog"><button class="button" autofocus>I'm ready to return</button></form></div></dialog>
+  <dialog id="login-dialog" class="auth-dialog" aria-labelledby="login-title" aria-describedby="login-description">
+    <button class="dialog-close" data-close-login aria-label="Close demo sign-in">×</button>
+    <div class="auth-layout"><aside class="auth-story"><div class="auth-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="465 207 395 310" width="56" height="56" focusable="false" preserveAspectRatio="xMidYMid meet"><defs><clipPath id="brand-clip-2"><rect x="465" y="207" width="395" height="310"/></clipPath></defs><image href="assets/images/spark-lab-logo.jpeg" width="1264" height="843" clip-path="url(#brand-clip-2)"/></svg></span><span>spark <strong>lab</strong></span></div><h2>A little spark.<br>A space for you.</h2><p>Learn something small.<br>Discover something wonderful.</p><img src="assets/images/spark-tablet.webp" alt="Spark holding a learning tablet" width="640" height="640"><span class="auth-caption">Different minds. Endless possibilities.</span></aside>
+    <div class="auth-main"><span class="activity-kicker">WELCOME TO YOUR DEMO</span><h2 id="login-title">Let’s find your spark.</h2><p id="login-description">Choose a sample account to explore the experience.</p>
+      <div class="role-choices" role="group" aria-label="Choose a sample account"><button type="button" data-demo-account="learner" aria-pressed="true"><span aria-hidden="true">✦</span><strong>Learner</strong><small>Discover &amp; practise</small></button><button type="button" data-demo-account="educator" aria-pressed="false"><span aria-hidden="true">▦</span><strong>Educator</strong><small>Explore class progress</small></button></div>
+      <form id="demo-login-form" autocomplete="off"><label for="demo-email">Demo email</label><input id="demo-email" type="email" inputmode="email" autocomplete="off" spellcheck="false" required aria-describedby="demo-credentials"><label for="demo-password">Demo password</label><div class="password-field"><input id="demo-password" type="password" autocomplete="off" required aria-describedby="demo-credentials"><button id="show-demo-password" type="button" aria-label="Show demo password" aria-pressed="false">Show</button></div><p id="login-error" role="alert"></p><button class="button auth-submit" type="submit">Sign in to demo</button></form>
+      <div class="demo-credentials" id="demo-credentials"><strong>Sample credentials</strong><span id="sample-email">learner@sparklab.demo</span><span>Password: <code>Spark123!</code></span><small>Demo accounts only. Please don’t use a personal password.</small></div><button class="guest-link" id="continue-guest">Continue as a guest</button>
+    </div></div>
+  </dialog>
+  <dialog id="account-dialog" class="account-dialog" aria-labelledby="account-title"><button class="dialog-close" id="close-account" aria-label="Close demo account">×</button><div class="account-avatar" id="account-avatar" aria-hidden="true">SL</div><span class="activity-kicker">YOUR DEMO ACCOUNT</span><h2 id="account-title">Hello, Spark Learner.</h2><p id="account-description"></p><div class="account-summary"><div><strong id="account-cards">0 / 4</strong><span>Cards learned</span></div><div><strong id="account-badges">0 / 3</strong><span>Badges earned</span></div></div><button id="continue-workspace" class="button">Continue learning</button><button id="switch-account" class="outline-button">Switch demo role</button><button id="sign-out" class="guest-link">Sign out of demo</button><p class="session-note">This is a local sample account. Sign-in and progress reset on reload. Switching roles keeps this tab’s demo progress.</p></dialog>
+  <div id="account-announcement" class="sr-only" role="status"></div>
   <dialog id="privacy-dialog">
     <h2>Your privacy matters.</h2>
-    <p>The robot and family images are AI-created concept visuals. This demonstration does not collect names, emails or learning records. Your interactions are temporary and no analytics are installed. Hosting providers may process technical access logs.</p>
+    <p>The robot and family images are AI-created concept visuals. Demo sign-in accepts only the supplied sample credentials and checks them locally. No credentials or learning records are sent by the demo scripts. Sign-in and progress reset on reload; no analytics are installed. Hosting providers may process technical access logs.</p>
     <form method="dialog"><button class="button">Close</button></form>
   </dialog>
 
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/learning.js"></script>
   <script src="assets/js/upgrade.js"></script>
   <script src="assets/js/three.local.js"></script>
   <script src="assets/js/scene.js"></script>
